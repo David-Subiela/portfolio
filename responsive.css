@@ -1,0 +1,44 @@
+@media (max-width: 428px) {
+  .intro h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .intro-desc {
+    font-size: 10px;
+    width: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row-skills {
+    flex-wrap: wrap;
+    width: 250px;
+    margin: auto;
+    gap: 20px;
+  }
+  .row-skills i {
+    font-size: 30px;
+  }
+  .row-skills h2 {
+    font-size: 20px;
+  }
+
+  .aprendiendo {
+    font-size: 20px;
+    width: 220px;
+    margin: auto;
+  }
+
+  /*   #timeline .timeline-item .timeline-content h2 {
+    font-size: 15px;
+  }
+  .timeline-content h2 .date {
+    font-size: 15px;
+  }
+  .timeline-content .description {
+    font-size: 15px;
+    width: 130px;
+    margin-left: -10px;
+  } */
+}

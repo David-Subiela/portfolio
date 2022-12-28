@@ -1,0 +1,39 @@
+.moon-sun {
+  position: absolute;
+  z-index: 1;
+  left: 15px;
+}
+
+#dark-mode,
+#light-mode {
+  text-align: right;
+  cursor: pointer;
+}
+
+#dark-mode .fa-moon {
+  color: var(--white);
+}
+#light-mode .fa-sun {
+  color: #f1c40f;
+}
+
+.dark .section-primary {
+  background-color: #273746;
+  color: var(--white);
+}
+
+.dark .section-image {
+}
+
+/* LANGUAGES ICONS:
+ * =================================================================== */
+.languages {
+  position: absolute;
+  z-index: 1;
+  right: 30px;
+}
+
+.languages .spanish-english img {
+  width: 30px;
+  height: 30px;
+}
