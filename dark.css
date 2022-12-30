@@ -19,6 +19,7 @@
 
 .dark .section-primary {
   background-color: #273746;
+  /* background-color: #122e49; */
   color: var(--white);
 }
 
@@ -46,6 +47,15 @@
   display: table;
 }
 
+.dark .separation {
+  background-color: #273746;
+}
+.dark .separation hr {
+  border-top: 3px solid var(--white);
+  width: 90%;
+  margin: auto;
+}
+
 /* LANGUAGES ICONS:
  * =================================================================== */
 .languages {
@@ -57,4 +67,16 @@
 .languages .spanish-english img {
   width: 30px;
   height: 30px;
+}
+
+/* DOWNLOAD CV:
+ * =================================================================== */
+.dark .download-button {
+  box-shadow: 5px 5px rgba(253, 253, 253, 0.5);
+}
+.dark .download-button:hover {
+  border: 1px solid var(--white);
+}
+.dark .download-button:hover a {
+  color: var(--white);
 }

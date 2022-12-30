@@ -284,6 +284,9 @@ section {
   padding: 10px 20px;
   font-size: 15px;
   border: 1px solid var(--green-light);
+  border-radius: 15px;
+  letter-spacing: 3px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
 }
 .download-button:hover {
   border: 1px solid var(--dark);
