@@ -1,4 +1,5 @@
 @media (max-width: 428px) {
+  /* ============================== INTRO =====================================*/
   .intro h1 {
     font-size: 35px;
     margin-bottom: 20px;
@@ -9,8 +10,22 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
   }
 
+  .social {
+    padding-top: 50px;
+  }
+
+  /* STYLES SECTION - EDUCATION:
+ * =================================================================== */
+
+  .container .ioc h2 {
+    font-size: 25px;
+  }
+
+  /* SKILLS STYLES:
+ * =================================================================== */
   .row-skills {
     flex-wrap: wrap;
     width: 250px;
@@ -30,15 +45,25 @@
     margin: auto;
   }
 
-  /*   #timeline .timeline-item .timeline-content h2 {
-    font-size: 15px;
+  /* EXPERIENCE STYLES:
+ * =================================================================== */
+  #experiencesection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
   }
-  .timeline-content h2 .date {
-    font-size: 15px;
+  .content-experience {
+    width: 80%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--green-light);
   }
-  .timeline-content .description {
-    font-size: 15px;
-    width: 130px;
-    margin-left: -10px;
-  } */
+
+  /* FOOTER:
+ * =================================================================== */
+  .footer {
+    padding-bottom: 80px;
+  }
 }
