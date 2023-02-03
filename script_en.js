@@ -3,16 +3,12 @@ const spanishBtn = document.querySelector(".spanish-btn");
 const flechaArriba = document.querySelector(".flecha-arriba");
 const flechaAbajo = document.querySelector(".flecha-abajo");
 
-englishBtn.addEventListener("click", () => {
-  location.href = "./index_en.html";
-});
-
-const typed = new Typed(".typed", {
+const typedEn = new Typed(".typed_en", {
   strings: [
-    "<strong>Desarrollador de software</strong>",
-    "<strong>Estudiante del Ciclo Superior en DAW</strong>",
-    "<strong>Bebedor de Café</strong>",
-    "<strong>Autodidacta</strong>",
+    "<strong>Software Developer</strong>",
+    "<strong>Web Application Development degree student</strong>",
+    "<strong>Coffee Drinker</strong>",
+    "<strong>Self-learner</strong>",
   ],
   //stringsElement: "#wrapper-down", // ID del elemento que contiene cadenas de texto a mostrar.
   typeSpeed: 75, // Velocidad en milisegundos para poner una letra,
@@ -26,6 +22,10 @@ const typed = new Typed(".typed", {
   showCursor: true, // Mostrar cursor palpitando
   cursorChar: "|", // Caracter para el cursor
   contentType: "html", // 'html' o 'null' para texto sin formato
+});
+
+spanishBtn.addEventListener("click", () => {
+  location.href = "./index.html";
 });
 
 flechaArriba.addEventListener("click", () => {

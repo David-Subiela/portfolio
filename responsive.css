@@ -1,8 +1,8 @@
 @media (max-width: 428px) {
   /* ============================== INTRO =====================================*/
   .intro h1 {
-    font-size: 35px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 15px;
   }
   .intro-desc {
     font-size: 10px;
@@ -38,11 +38,17 @@
   .row-skills h2 {
     font-size: 20px;
   }
+  .row-skills li {
+    row-gap: 5px;
+    width: 20px;
+    padding: 10px 50px;
+  }
 
   .aprendiendo {
     font-size: 20px;
     width: 220px;
     margin: auto;
+    padding-bottom: 20px;
   }
 
   /* EXPERIENCE STYLES:

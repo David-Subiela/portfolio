@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/dark.css" />
     <link rel="stylesheet" href="/responsive.css" />
@@ -21,6 +22,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>CV David Subiela</title>
   </head>
   <body>
@@ -29,22 +34,27 @@
     </div>
     <div class="btn-whatsApp">
       <a
-        href="https://api.whatsapp.com/send?phone=+34 637034373&text=CONTÁCTAME%20PARA%20CONOCER%20MÁS%20SOBRE%20MÍ%20PERFIL%20PROFESIONAL"
+        href="https://api.whatsapp.com/send?phone=+34 637034373"
         class="btn-whatsApp"
+        id="tooltip"
         target="_blank"
       >
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-      <div class="tooltip">
-        <span class="tiptext"
+        <i class="fa-brands fa-whatsapp"></i
+        ><span class="tooltip-box"
           >Contáctame para conocer más de mi PERFIL PROFESIONAL</span
         >
-      </div>
+      </a>
     </div>
+
+    <!-- <main id="fullpage"> -->
     <!-- SECTION INICIAL-->
     <section class="section-image">
-      <div class="background"></div>
-
+      <div class="flecha-abajo">
+        <a href="#"><i class="fa-solid fa-angles-down"></i></a>
+      </div>
+      <div class="background">
+        <!-- <div class="wave"></div> -->
+      </div>
       <div class="moon-sun">
         <div id="dark-mode">
           <i class="fa-solid fa-moon fa-2x"></i>
@@ -59,7 +69,7 @@
             ><img src="/images/espana.png" alt="Español/Spanish"
           /></a>
           <a class="english-btn" href="#"
-            ><img src="/images/reino-unido.png" alt=""
+            ><img src="/images/reino-unido.png" alt="Inglés/English"
           /></a>
         </div>
       </div>
@@ -68,14 +78,16 @@
         <div class="row">
           <h5>Hola<span class="hello">👋</span></h5>
 
-          <h1>Soy David Subiela</h1>
+          <h1 class="nameTyped">Soy David Subiela.</h1>
 
-          <p class="intro-desc">
-            <span>Programador 👨‍💻</span>
-            <span class="colour-splash">•</span>
-            <span>Aventurero 🏞️</span> <span class="colour-splash">•</span>
-            <span>Bebedor de Café ☕</span>
-          </p>
+          <div class="wrapper-down">
+            <p class="intro-desc">
+              <span class="typed"></span>
+              <span class="typed"></span>
+              <span class="typed"></span>
+              <span class="typed"></span>
+            </p>
+          </div>
         </div>
         <div class="row">
           <div class="social">
@@ -98,7 +110,8 @@
 
           <h2>SOBRE MÍ</h2>
           <hr />
-          <p class="lead">
+
+          <p class="lead" data-aos="fade-up" data-aos-duration="2000">
             <em
               >"No vayas a donde el camino te lleve. Ve por donde no hay camino
               y deja un sendero"</em
@@ -118,6 +131,7 @@
 
     <!-- SKILLS SECTION -->
     <section class="section-image" id="skills">
+      <div class="wave"></div>
       <div class="img-overlay"></div>
       <div class="container">
         <div class="row">
@@ -125,32 +139,32 @@
           <p class="lead"></p>
           <hr />
         </div>
-        <div class="row-skills">
-          <div>
+        <ul class="row-skills">
+          <li class="animate__animated animate__backInLeft animate__delay-0s">
             <i class="fa-brands fa-java fa-5x"></i>
             <h2>Java</h2>
-          </div>
-          <div>
+          </li>
+          <li class="animate__animated animate__backInLeft animate__delay-1s">
             <i class="fa-brands fa-html5 fa-5x"></i>
             <h2>HTML</h2>
-          </div>
-          <div>
+          </li>
+          <li class="animate__animated animate__backInLeft animate__delay-2s">
             <i class="fa-brands fa-css3-alt fa-5x"></i>
             <h2>CSS</h2>
-          </div>
-          <div>
+          </li>
+          <li class="animate__animated animate__backInLeft animate__delay-3s">
             <i class="fa-brands fa-js fa-5x"></i>
             <h2>Javascript</h2>
-          </div>
-          <div>
+          </li>
+          <li class="animate__animated animate__backInLeft animate__delay-4s">
             <i class="fa-brands fa-git-alt fa-5x"></i>
             <h2>Git</h2>
-          </div>
-          <div>
+          </li>
+          <li class="animate__animated animate__backInLeft animate__delay-5s">
             <i class="fa-solid fa-database fa-5x"></i>
             <h2>MySQL</h2>
-          </div>
-        </div>
+          </li>
+        </ul>
         <div>
           <p class="aprendiendo">
             <strong>Aprendiendo el máximo cada día... 💪</strong>
@@ -164,7 +178,7 @@
           <h2>FORMACIÓN</h2>
           <hr class="white" />
         </div>
-        <div class="ioc">
+        <div class="ioc" data-aos="fade-right" data-aos-duration="2000">
           <img
             class="netq"
             src="/images/IOC.png"
@@ -195,7 +209,11 @@
         <hr class="white" />
       </div>
       <div id="experiencesection">
-        <div class="content-experience">
+        <div
+          class="content-experience"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
           <div class="encabezado">
             <img
               class="netq"
@@ -219,7 +237,11 @@
             </p>
           </div>
         </div>
-        <div class="content-experience">
+        <div
+          class="content-experience"
+          data-aos="flip-right"
+          data-aos-duration="2000"
+        >
           <div class="encabezado">
             <img
               class="netq"
@@ -253,7 +275,7 @@
           <div class="section-heading">
             <h2>MIS PROYECTOS</h2>
             <hr class="white" />
-            <h2 class="progress">EN PROGRESO... ⏳</h2>
+            <img src="/images/work-in-progress.gif" class="progress" />
           </div>
         </div>
       </section>
@@ -295,12 +317,21 @@
         </div>
       </div>
     </footer>
+    <!-- </main> -->
 
     <!-- JavaScript
   ================================================== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
     <script src="/darkMode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="/script.js"></script>
+    <!--  <script type="text/javascript" src="/fullpage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script> -->
   </body>
 </html>
