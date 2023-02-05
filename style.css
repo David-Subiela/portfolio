@@ -126,10 +126,8 @@ a:hover {
   50% {
     border-color: transparent;
   }
-  100% {
-    color: transparent;
-  }
 }
+
 .intro h5 {
   color: var(--green-light);
   font-size: 2.3rem;
@@ -138,33 +136,58 @@ a:hover {
   letter-spacing: 0.3rem;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
-
-.hello {
-  text-transform: uppercase;
-  font-size: 1.4em;
-  padding: 0 10px;
-  font-weight: 100;
+/* MANO ANIMADA */
+.w-16 {
+  width: 4rem;
 }
-/* .hello span {
-  animation: movement 2.5s linear infinite;
+.animate-hand {
+  animation: hand 2.5s ease-in-out infinite;
 }
-@keyframes movement {
+@keyframes hand {
   0% {
-    transform: translateY(0);
+    transform: rotate(0deg);
   }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
   50% {
-    transform: translateY(30px);
+    transform: rotate(10deg);
   }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
   100% {
-    transform: translateY(0);
+    transform: rotate(0deg);
   }
-} */
+}
 
 .section-image span {
   text-transform: uppercase;
   font-size: 1.4em;
   font-weight: 100;
 }
+
+.row-mi .image-file {
+  width: 92%;
+  height: auto;
+}
+
 /* SOCIAL ICONS:
  * =================================================================== */
 
@@ -325,6 +348,26 @@ section {
 
 .section-primary .progress {
   padding-top: 50px;
+}
+
+.slide {
+  animation-name: slideIn;
+  animation-duration: 350ms;
+  animation-delay: calc(var(--animation-order) * 100ms);
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.57, 0.35, 0.01, 0.94);
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* EXPERIENCE STYLES:

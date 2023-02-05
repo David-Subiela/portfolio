@@ -2,6 +2,8 @@ const englishBtn = document.querySelector(".english-btn");
 const spanishBtn = document.querySelector(".spanish-btn");
 const flechaArriba = document.querySelector(".flecha-arriba");
 const flechaAbajo = document.querySelector(".flecha-abajo");
+const skillsContainer = document.querySelector(".row-skills");
+const listItems = document.querySelectorAll(".list-items");
 
 const typedEn = new Typed(".typed_en", {
   strings: [
@@ -50,3 +52,16 @@ flechaAbajo.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+// Skill section Intersection Observer
+const skillObserver = new IntersectionObserver((entries) => {
+  const [entry] = entries;
+  if (entry.isIntersecting) {
+    listItems.forEach((list) => list.classList.add("slide"));
+    console.log("ver animación");
+  } else {
+    listItems.forEach((list) => list.classList.remove("slide"));
+    console.log("ocultar animación");
+  }
+});
+skillObserver.observe(skillsContainer);

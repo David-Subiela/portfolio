@@ -16,12 +16,29 @@
   .social {
     padding-top: 50px;
   }
+  .wrapper-down {
+    width: 100%;
+  }
+  .intro-desc {
+    width: 100%;
+  }
+  .typed {
+    border: 1px solid red;
+    width: 100%;
+  }
+  .typed-cursor {
+    color: blue;
+  }
 
   /* STYLES SECTION - EDUCATION:
  * =================================================================== */
 
   .container .ioc h2 {
     font-size: 25px;
+  }
+
+  .wave {
+    margin-bottom: -1px;
   }
 
   /* SKILLS STYLES:
