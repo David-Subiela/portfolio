@@ -29,6 +29,16 @@
   .typed-cursor {
     color: blue;
   } */
+  /* STYLES SECTION - ABOUT ME:
+ * =================================================================== */
+  .section-primary .lead {
+    text-align: center;
+    width: 80%;
+  }
+  .ioc .description-edu {
+    text-align: center;
+    width: 80%;
+  }
 
   /* STYLES SECTION - EDUCATION:
  * =================================================================== */
@@ -38,7 +48,7 @@
   }
 
   .wave {
-    margin-bottom: -1px;
+    margin-bottom: -2px;
   }
 
   /* SKILLS STYLES:
