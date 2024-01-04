@@ -12,7 +12,7 @@ englishBtn.addEventListener("click", () => {
 const typed = new Typed(".typed", {
   strings: [
     "<strong>Desarrollador de software</strong>",
-    "<strong>Estudiante del Ciclo Superior en DAW</strong>",
+    "<strong>Estudiante de Máster en Desarrollo Web</strong>",
     "<strong>Bebedor de Café</strong>",
     "<strong>Autodidacta</strong>",
   ],

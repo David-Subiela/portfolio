@@ -8,7 +8,7 @@ const listItems = document.querySelectorAll(".list-items");
 const typedEn = new Typed(".typed_en", {
   strings: [
     "<strong>Software Developer</strong>",
-    "<strong>Web Application Development degree student</strong>",
+    "<strong>Web Development Master's Student</strong>",
     "<strong>Coffee Drinker</strong>",
     "<strong>Self-learner</strong>",
   ],
