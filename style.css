@@ -18,6 +18,9 @@ body {
   --white: #fafafb;
   --dark: #111111;
 }
+ul {
+  list-style: none;
+}
 
 hr {
   border-top: 5px solid var(--green-light);
@@ -204,11 +207,10 @@ a:hover {
   padding: 2em;
 }
 .social a:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .social-footer {
-  position: block;
   padding: 15px;
 }
 
@@ -424,6 +426,118 @@ section {
 /* GIF STYLE*/
 img.progress {
   width: 30%;
+}
+
+/* MIS PROYECTOS
+* =================================================================== */
+.section-heading h2 {
+  padding-top: 100px;
+}
+
+.card {
+  margin: 50px auto;
+  position: relative;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: #ffffff;
+  cursor: pointer;
+  padding: 20px;
+}
+.imgbox img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.content-card h1 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content-card p {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* VER PROYECTOS */
+
+.ver-proyectos-boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--green-light);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.ver-proyectos-boton:hover {
+  color: var(--green-light);
+  background-color: var(--white);
+  border: 1px solid var(--green-light);
+}
+
+.disappear-tech p {
+  font-size: 15px;
+  padding: 14px 9px;
+}
+.disappear-tech-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.disappear-tech-flex li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*  margin: 0 10px; */
+}
+.disappear-tech-flex p {
+  font-size: 10px;
+  padding: 0px 0px;
+}
+.disappear-tech-flex i {
+  color: var(--green-light);
+}
+.disappear-tech-html p {
+  padding-right: 30px;
+}
+.disappear-tech-css p {
+  padding-right: 20px;
+}
+.disappear-tech-code p {
+  padding: 10px 34px;
+}
+.disappear-tech-code a {
+  color: var(--dark);
+}
+
+.more-proxim {
+  padding-top: 0px !important;
+  padding-bottom: 50px;
+  text-align: center !important;
+  font-weight: bold;
+}
+
+/* OCULTAR TECNOLOGIAS */
+.disappear-tech {
+  display: none;
+}
+.card:hover .disappear-tech {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+section#shadow-host-companion {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 /* DOWNLOAD BUTTON
