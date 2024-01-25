@@ -37,6 +37,9 @@
   .section-jobs-complete {
     grid-template-columns: repeat(1, 1fr);
   }
+  .card {
+    margin: 20px auto;
+  }
 }
 @media (max-width: 428px) {
   /* ============================== INTRO =====================================*/
