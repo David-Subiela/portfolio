@@ -17,16 +17,16 @@
 
 @media (max-width: 500px) {
   .intro h5 {
-    font-size: 4.9vw;
+    font-size: 5.9vw;
   }
   .intro h1 {
-    font-size: 8.5vw;
+    font-size: 9.5vw;
   }
   .w-16 {
-    width: 7.5vw;
+    width: 8.75vw;
   }
   .section-image span {
-    font-size: 2.67vw;
+    font-size: 2.85vw;
   }
   .encabezado h2 {
     font-size: 3.5vw;
