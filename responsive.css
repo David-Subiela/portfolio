@@ -1,15 +1,54 @@
+@media (max-width: 800px) {
+  /* EXPERIENCE STYLES:
+ * =================================================================== */
+  .section-jobs-complete {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 610px) {
+  .section-primary p {
+    font-size: 17px;
+  }
+  .social {
+    font-size: 0.75em;
+  }
+}
+
+@media (max-width: 500px) {
+  .intro h5 {
+    font-size: 4.9vw;
+  }
+  .intro h1 {
+    font-size: 8.5vw;
+  }
+  .w-16 {
+    width: 7.5vw;
+  }
+  .section-image span {
+    font-size: 2.67vw;
+  }
+  .encabezado h2 {
+    font-size: 3.5vw;
+  }
+  .encabezado .date {
+    font-size: 2.95vw;
+  }
+  .section-jobs-complete {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 @media (max-width: 428px) {
   /* ============================== INTRO =====================================*/
   .intro h1 {
-    font-size: 30px;
     margin-bottom: 15px;
   }
   .intro-desc {
     font-size: 10px;
     width: 200px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     padding-top: 20px;
   }
 
@@ -80,6 +119,10 @@
 
   /* EXPERIENCE STYLES:
  * =================================================================== */
+
+  .encabezado h2 {
+    font-size: 4.5vw;
+  }
   #experiencesection {
     display: flex;
     flex-direction: column;

@@ -104,7 +104,7 @@ a:hover {
   margin-left: 0;
 }
 .intro h1 {
-  font-size: 84px;
+  font-size: 6.5vw;
   margin: auto;
 }
 
@@ -133,7 +133,7 @@ a:hover {
 
 .intro h5 {
   color: var(--green-light);
-  font-size: 2.3rem;
+  font-size: 2.3vw;
   margin-bottom: 0;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
@@ -141,7 +141,7 @@ a:hover {
 }
 /* MANO ANIMADA */
 .w-16 {
-  width: 4rem;
+  width: 4.5vw;
 }
 .animate-hand {
   animation: hand 2.5s ease-in-out infinite;
@@ -182,7 +182,7 @@ a:hover {
 
 .section-image span {
   text-transform: uppercase;
-  font-size: 1.4em;
+  font-size: 1.67vw;
   font-weight: 100;
 }
 
@@ -233,6 +233,9 @@ section {
 .section-primary h2 {
   font-size: 30px;
 }
+.encabezado h2 {
+  font-size: 2.3vw;
+}
 .lead {
   font-size: 20px;
 }
@@ -257,6 +260,10 @@ section {
 }
 .separation {
   background-color: #f9f9f9;
+}
+
+.description {
+  font-size: 1.042vw;
 }
 
 .separation hr {
@@ -405,7 +412,7 @@ section {
 
 .encabezado .date {
   color: var(--white);
-  font-size: 25px;
+  font-size: 1.85vw;
 }
 .encabezado .position {
   color: var(--dark);
@@ -483,14 +490,21 @@ img.progress {
   border: 1px solid var(--green-light);
 }
 
+.section-jobs-complete {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
 .disappear-tech p {
   font-size: 15px;
   padding: 14px 9px;
 }
 .disappear-tech-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 .disappear-tech-flex li {
   display: flex;
@@ -512,7 +526,7 @@ img.progress {
   padding-right: 20px;
 }
 .disappear-tech-code p {
-  padding: 10px 34px;
+  padding: 10px 25px;
 }
 .disappear-tech-code a {
   color: var(--dark);
@@ -527,13 +541,13 @@ img.progress {
 
 /* OCULTAR TECNOLOGIAS */
 .disappear-tech {
-  display: none;
+  display: block;
 }
-.card:hover .disappear-tech {
+/* .card:hover .disappear-tech {
   display: block;
   text-align: center;
   margin-top: 20px;
-}
+} */
 
 section#shadow-host-companion {
   padding-top: 0px;
