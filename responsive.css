@@ -32,7 +32,7 @@
     font-size: 3.5vw;
   }
   .encabezado .date {
-    font-size: 2.95vw;
+    font-size: 3.95vw;
   }
   .section-jobs-complete {
     grid-template-columns: repeat(1, 1fr);
@@ -121,7 +121,7 @@
  * =================================================================== */
 
   .encabezado h2 {
-    font-size: 4.5vw;
+    font-size: 5.5vw;
   }
   #experiencesection {
     display: flex;
